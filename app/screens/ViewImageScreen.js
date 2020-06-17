@@ -4,6 +4,8 @@ import { Image, StyleSheet } from "react-native";
 function ViewImageScreen(props) {
   return (
     <View styles={styles.container}>
+      <View styles={styles.closeIcon}></View>
+      <View styles={styles.deleteIcon}></View>
       <Image
         resizeMode="contain"
         styles={styles.image}
@@ -14,9 +16,25 @@ function ViewImageScreen(props) {
 }
 
 const styles = StyleSheet.create({
+  closeIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: "#fc5c65",
+    position: "absolute",
+    top: 40,
+    left: 30,
+  },
   container: {
     backgroundColor: "#000",
     flex: 1,
+  },
+  deleteIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: "#4ecdc4",
+    position: "absolute",
+    top: 40,
+    right: 30,
   },
   image: {
     width: "100%",
