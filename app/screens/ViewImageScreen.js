@@ -5,12 +5,12 @@ import colours from "../config/colours";
 
 function ViewImageScreen(props) {
   return (
-    <View styles={styles.container}>
-      <View styles={styles.closeIcon}></View>
-      <View styles={styles.deleteIcon}></View>
+    <View style={styles.container}>
+      <View style={styles.closeIcon} />
+      <View style={styles.deleteIcon} />
       <Image
         resizeMode="contain"
-        styles={styles.image}
+        style={styles.image}
         source={require("../assets/chair.jpg")}
       />
     </View>
